@@ -158,13 +158,13 @@ https://github.com/rtfenter/Systems-of-Trust-Series
 ## Status
 
 MVP is implemented and active.  
-The prototype will focus on **zone visualization, contract notes, and violation detection**, not a full lineage or catalog system.
+This prototype will focus on **zone visualization, contract notes, and violation detection**, not a full lineage or catalog system.
 
 ---
 
 ## Local Use
 
-Everything will run client-side.
+Everything runs client-side.
 
 To run locally (once the prototype is implemented):
 
