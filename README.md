@@ -54,7 +54,8 @@ This tool focuses on boundary correctness, not full data lineage or governance c
 ---
 
 ## Demo Screenshot
-<img width="2696" height="1556" alt="Screenshot — Ownership Boundary Validator" src="https://github.com/user-attachments/assets/placeholder-ownership-boundary-validator.png" />
+<img width="2804" height="1716" alt="Screenshot 2025-11-24 at 09-23-57 Ownership Boundary Validator" src="https://github.com/user-attachments/assets/5322d985-5b29-4720-9ca8-672b0503da24" />
+
 
 ---
 
@@ -156,7 +157,7 @@ https://github.com/rtfenter/Systems-of-Trust-Series
 
 ## Status
 
-MVP planned and in progress.  
+MVP is implemented and active.  
 The prototype will focus on **zone visualization, contract notes, and violation detection**, not a full lineage or catalog system.
 
 ---
