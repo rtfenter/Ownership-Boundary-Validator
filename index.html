@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ownership Boundary Validator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header-inner">
+      <h1>Ownership Boundary Validator</h1>
+      <p class="tagline">
+        See where a field crosses privacy, legal, or domain boundaries it shouldn’t — before data moves across systems.
+      </p>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- LEFT PANEL: CONTROLS + SUMMARY + FIELD METADATA -->
+    <section class="panel panel-controls">
+      <div class="panel-header">
+        <h2>Field &amp; Boundary Summary</h2>
+      </div>
+
+      <div class="field">
+        <label for="field-select">Field</label>
+        <select id="field-select" class="select">
+          <!-- Options injected by app.js -->
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="lens-select">Boundary Lens</label>
+        <select id="lens-select" class="select">
+          <option value="privacy">Privacy</option>
+          <option value="legal">Legal / Regional</option>
+          <option value="domain">Domain Ownership</option>
+        </select>
+      </div>
+
+      <p id="field-description" class="concept-description">
+        Select a field and lens to see where it is owned, shared under contract, and out-of-bounds.
+      </p>
+
+      <div id="summary" class="summary">
+        <div id="summary-badge" class="summary-badge summary-badge-idle">
+          No field selected yet.
+        </div>
+      </div>
+
+      <div class="legend">
+        <h3>Zone Legend</h3>
+        <ul>
+          <li>
+            <span class="legend-dot legend-low"></span>
+            Zone 1 – Owned &amp; Expected
+          </li>
+          <li>
+            <span class="legend-dot legend-medium"></span>
+            Zone 2 – Shared Under Contract
+          </li>
+          <li>
+            <span class="legend-dot legend-high"></span>
+            Zone 3 – Out-of-Bounds
+          </li>
+        </ul>
+      </div>
+
+      <div class="notes-card">
+        <h3>How to Read This Map</h3>
+        <p>
+          The validator groups systems into three zones for the selected field and lens:
+          ownership, allowed sharing, and out-of-bounds.
+        </p>
+        <p>
+          Click any system in the map to see why it belongs there and what contract or
+          violation applies.
+        </p>
+      </div>
+
+      <div class="field-card">
+        <h3>Field Metadata</h3>
+        <p id="field-meta-name" class="field-meta-name">—</p>
+        <p id="field-meta-classification" class="field-meta-line">Classification: —</p>
+        <p id="field-meta-owner" class="field-meta-line">Primary owner: —</p>
+      </div>
+    </section>
+
+    <!-- RIGHT PANEL: BOUNDARY MAP + DETAILS -->
+    <section class="panel panel-map">
+      <div class="panel-header">
+        <h2>Ownership Boundary Map</h2>
+      </div>
+
+      <div id="boundary-map-container" class="boundary-map-container">
+        <p class="map-empty">
+          Select a field and boundary lens to render the zone map.
+        </p>
+      </div>
+
+      <div id="details-card" class="details-card">
+        <h3>Boundary Details</h3>
+        <p class="details-empty">
+          Click any system in the boundary map to see its role, zone, and contract or violation details.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>
+      Part of the
+      <a href="https://github.com/rtfenter/Systems-of-Trust-Series" target="_blank" rel="noreferrer">
+        Systems of Trust Series
+      </a>.
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
