@@ -36,7 +36,7 @@ This validator makes boundary violations visible at design-time instead of durin
 
 ## Features (MVP)
 
-The prototype will include:
+This prototype includes:
 
 - **Field Selector** – pick a field to evaluate across systems and domains  
 - **Boundary Lens** – switch between Privacy, Legal, and Domain Ownership views  
