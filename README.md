@@ -56,11 +56,11 @@ This tool focuses on boundary correctness, not full data lineage or governance c
 ## Demo Screenshot
 <img width="2804" height="1716" alt="Screenshot 2025-11-24 at 09-23-57 Ownership Boundary Validator" src="https://github.com/user-attachments/assets/5322d985-5b29-4720-9ca8-672b0503da24" />
 
-
 ---
 
-## Ownership Boundary Map
+## Boundary Flow Diagram
 
+```
     [Zone 1: Owned & Expected]
     Core Services
       |  (contractual sharing)
@@ -71,6 +71,7 @@ This tool focuses on boundary correctness, not full data lineage or governance c
       v
     [Zone 3: Out-of-Bounds]
     Vendors · Marketing Tools · External Pipelines
+```
 
 The validator places each system into one of these three zones for the selected field.
 
@@ -161,7 +162,6 @@ MVP is implemented and active.
 This prototype will focus on **zone visualization, contract notes, and violation detection**, not a full lineage or catalog system.
 
 ---
-
 ## Local Use
 
 Everything runs client-side.
